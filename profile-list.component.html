@@ -1,0 +1,7 @@
+
+<div *ngFor="let profile of profiles" class="profile-card">
+  <img [src]="profile.photoUrl" alt="Profile Photo">
+  <h3>{{ profile.name }}</h3>
+  <p>{{ profile.description }}</p>
+  <button (click)="showSummary(profile)">Summary</button>
+</div>
